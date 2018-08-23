@@ -38,7 +38,6 @@ class Usuario extends CI_Controller
             'response'  => $ca
         );
 
-        // Enviar dados recebido para a API do cpatcha a partir de um Canal iniciado pela biblioteca CURL do PHP
         $ch = curl_init();
 
         curl_setopt($ch, CURLOPT_URL, $url);
